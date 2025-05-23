@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wildlife Wonders</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    /* Skip link styling */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    nav {
+      display: inline-block;
+      width: 80%;
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    /* Comment out the li styling */
+    /*
+    li {
+      list-style: square;
+      margin-left: 20px;
+    }
+    */
+
+    nav img {
+      width: 10%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 1.5rem;
+      background-color: #eef;
+      padding: 1rem;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #ffe;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content link -->
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <h1>Wildlife Wonders</h1>
+  </header>
+
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger Logo" />
+    <a href="https://www.nationalgeographic.com/animals" target="_blank">Visit National Geographic</a>
+  </nav>
+
+  <main id="main">
+    <section>
+      <h2>Favorite Animals</h2>
+      <ul>
+        <li>Tiger</li>
+        <li>Elephant</li>
+        <li>Penguin</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="Elephant">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Emperor_Penguin_Manchot_empereur.jpg" alt="Penguin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lion_waiting_in_Namibia.jpg" alt="Lion">
+    </section>
+
+    <section class="flex">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Koala_climbing_tree.jpg" alt="Koala" width="150">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Giraffe_standing.jpg" alt="Giraffe" width="150">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Red_Panda_in_tree.jpg" alt="Red Panda" width="150">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wildlife Wonders</p>
+  </footer>
+</body>
+</html>
