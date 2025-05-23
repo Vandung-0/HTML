@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Preview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #image {
+      height: 300px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: #f0f0f0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      text-align: center;
+      line-height: 300px;
+      font-size: 20px;
+    }
+
+    img.preview {
+      width: 150px;
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hover to Preview</h1>
+  <div id="image">Hover over an image below to display here.</div>
+
+  <div>
+    <img class="preview" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger in jungle" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" alt="African Elephant" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Emperor_Penguin_Manchot_empereur.jpg" alt="Emperor Penguin" onmouseover="upDate(this)" onmouseout="undo()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
