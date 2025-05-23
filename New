@@ -1,0 +1,37 @@
+/* Base styles */
+.some-div-class {
+  width: 30%;
+  margin: 1rem;
+  padding: 20px;
+  /* other styles */
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+/* Mobile first */
+@media (max-width: 600px) {
+  .some-div-class {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* Tablet / Small Desktop */
+@media (min-width: 601px) and (max-width: 900px) {
+  .some-div-class {
+    width: 45%;
+    margin: 1rem;
+    padding: 15px;
+    float: left;
+  }
+  img {
+    width: 90%;
+  }
+}
